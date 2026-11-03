@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order — How to Get Bread | Baked By The Lake Bread Co.</title>
+<meta name="description" content="How ordering works at Baked By The Lake Bread Co.: check the weekly bake board, order by the form before the cutoff, pick up fresh in Wolfeboro, NH.">
+<meta property="og:title" content="Order — Baked By The Lake Bread Co.">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="Baked By The Lake Bread Co. — home">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#A24E1F"/>
+        <path d="M9 27c0-7 5-12 11-12s11 5 11 12" fill="#FAF4E8"/>
+        <rect x="13.5" y="20.4" width="6" height="2.4" rx="1.2" transform="rotate(-24 16.5 21.6)" fill="#A24E1F"/>
+        <rect x="20" y="19" width="6" height="2.4" rx="1.2" transform="rotate(-24 23 20.2)" fill="#A24E1F"/>
+      </svg>
+      <span class="brand-name" data-site="name">Baked By The Lake Bread Co.</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="breads.html">Bread</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="visit.html">Visit</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-accent btn-sm" href="order.html">Order</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow reveal">Order</p>
+      <h1 class="reveal">Three steps<br>to <em class="it">fresh bread.</em></h1>
+      <ol class="steps">
+        <li class="reveal"><span class="n">01</span><h3>Check the board</h3><p>Two sample bakes a week — Wednesday and Friday. The board shows the next cutoff live.</p></li>
+        <li class="reveal"><span class="n">02</span><h3>Order ahead</h3><p>Fill the order form (or send a Facebook message) before the cutoff. Takes about a minute.</p></li>
+        <li class="reveal"><span class="n">03</span><h3>Pick up in Wolfeboro</h3><p>Same-day pickup window, bread still warm. The exact pickup spot is confirmed when you order.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap visit-grid">
+      <aside class="bake-board board-full reveal" id="bake-board" data-bake-board aria-label="Weekly bake schedule">
+        <div class="bake-board-head">
+          <h2>The bake-week board</h2>
+          <span class="sample-tag">sample</span>
+        </div>
+      </aside>
+      <div class="reveal">
+        <p class="mono-label">Place your order</p>
+        <h2>Ready when<br>the board says go.</h2>
+        <p>Today, orders go through the bakery's form — or a quick message on Facebook. Both take about a minute.</p>
+        <div class="btn-row">
+          <button class="btn btn-accent" id="order-form-sample" type="button">Open the order form <span class="sample-tag" style="border-color:#fff;color:#fff">sample link</span></button>
+          <a class="btn btn-ghost" data-site="facebook" href="https://www.facebook.com/profile.php?id=61586833705696">Message on Facebook</a>
+        </div>
+        <div class="demo-notice" id="order-form-note" role="status">
+          <h3 tabindex="-1">Sample link — here's the idea</h3>
+          <p>This button is a clearly-marked placeholder. On the real site it opens the bakery's actual order form (today a JotForm / Google Form). The Facebook message button above is the real ordering path right now.</p>
+        </div>
+        <p class="board-note" style="margin-top:1.4rem">Pickup windows and cutoff times shown are illustrative samples.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap visit-grid">
+      <div class="reveal">
+        <p class="mono-label">Questions</p>
+        <h2>Ask the baker<br>anything.</h2>
+        <p>Allergies, big orders, a loaf for Saturday's lake house — ask away. This demo form doesn't send anything yet; on the real site it would go straight to the bakery.</p>
+        <ul class="fact-list">
+          <li><span class="k">Today</span><span>Orders via form + Facebook message</span></li>
+          <li><span class="k">Pickup</span><span>Wolfeboro, NH — spot confirmed at order time</span></li>
+          <li><span class="k">Payment</span><span>Arranged when you order (sample note)</span></li>
+        </ul>
+      </div>
+      <div class="form-card reveal">
+        <form id="ask-form" novalidate>
+          <div class="field" id="field-name">
+            <label for="ask-name">Your name</label>
+            <input type="text" id="ask-name" name="name" autocomplete="name" aria-describedby="ask-name-err">
+            <p class="error-msg" id="ask-name-err"></p>
+          </div>
+          <div class="field" id="field-email">
+            <label for="ask-email">Email</label>
+            <input type="email" id="ask-email" name="email" autocomplete="email" aria-describedby="ask-email-err">
+            <p class="error-msg" id="ask-email-err"></p>
+          </div>
+          <div class="field" id="field-message">
+            <label for="ask-message">Your question</label>
+            <textarea id="ask-message" name="message" aria-describedby="ask-message-err"></textarea>
+            <p class="error-msg" id="ask-message-err"></p>
+          </div>
+          <label class="consent" for="ask-consent">
+            <input type="checkbox" id="ask-consent">
+            <span>I'm happy for the bakery to reply to my question by email. Nothing else happens with my details.</span>
+          </label>
+          <button class="btn btn-accent" type="submit" style="width:100%">Send question</button>
+          <div class="demo-notice" id="ask-success" role="status">
+            <h3>Demo received — nothing was sent</h3>
+            <p>This is a concept demo, so your message stays on this page. On the real site, it would go straight to the baker.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="sticky-order" aria-label="Quick order">
+  <span>This week's bakes are open</span>
+  <a class="btn btn-accent btn-sm" href="order.html">Order</a>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <p class="brand-name" data-site="name">Baked By The Lake Bread Co.</p>
+        <p>An artisan bakery in Wolfeboro, New Hampshire. Small weekly bakes, ordered ahead, picked up fresh.</p>
+        <p><a data-site="facebook" href="https://www.facebook.com/profile.php?id=61586833705696">Find us on Facebook</a></p>
+      </div>
+      <div class="foot-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="breads.html">Bread</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>Order</h3>
+        <ul>
+          <li><a href="order.html">How to order</a></li>
+          <li><a href="order.html#bake-board">Bake-week board</a></li>
+          <li><a data-site="facebook" href="https://www.facebook.com/profile.php?id=61586833705696">Message on Facebook</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>Fine print</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclosure">Concept demo site by <a href="https://bluedhaka.com">Tiyan Digital</a> — built as an outreach preview for the bakery. Menu items, prices, bake days, cutoff times, and pickup windows are illustrative samples, not the bakery's real schedule. Photos are AI-generated illustrations. See the real bakery on <a data-site="facebook" href="https://www.facebook.com/profile.php?id=61586833705696">Facebook</a>.</p>
+    <div class="legal-row">
+      <span>© <span data-site="year">2026</span> <span data-site="name">Baked By The Lake Bread Co.</span> — concept demo</span>
+      <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

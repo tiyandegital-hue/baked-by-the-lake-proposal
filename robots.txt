@@ -1,0 +1,3 @@
+# noindex — concept demo for outreach, not a public site
+User-agent: *
+Disallow: /
